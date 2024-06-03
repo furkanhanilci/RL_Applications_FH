@@ -49,4 +49,3 @@ This repository encompasses implementations of RL algorithms tailored for both c
 | DDPG      | Objective Function  | $$J(\pi) = E_{s \sim \rho^\beta}[Q(s, \pi(s))]$$ |
 |           | Critic Update       |$$L = \frac{1}{N} \sum_{i} [y_i - Q(s_i, a_i)]^2$$, where $$y_i = r_i + \gamma Q'(s_{i+1}, \pi'(s_{i+1};\theta^{\pi'}))$$ |
 |           | Actor Update        | $$\nabla_{\theta^\pi} J \approx (1/N) \sum_{i} ( \nabla_a Q(s, a;\theta^Q) \nabla_{\theta^\pi} \pi(s;\theta^\pi) )$$ | 
-
